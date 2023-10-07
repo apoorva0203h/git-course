@@ -1,0 +1,59 @@
+git --version
+git init--->create on master branch
+git status
+git init -b main ---->create main branch
+git branch -M main ---> to create main branch
+git log--->gives files which are commited
+git config global---> allows us to create user by using --->git user.name "name"
+                                                            git user.email "mail"
+git add filename--->adds file to staging area
+git restore --staged file (or) git rm -cached file ---->remove files from staging area    
+git commit -a -m "msg" --->to commit directly without using git
+git diff ----> compares commited
+git diff --staged --->to compare code in staged area
+git add .---> is used to add all the files 
+git rm --cached appu.txt--->used to remove file from git
+git clone link  --->link is copied from github
+cat filename ---> used to see the content of file
+ssh-keygen -o---> to create keygen
+git remote -v --->to know origin
+tagging: giving version to the code after several commit when we feel code has been set once
+1.Annotated tagging --> to know who ae using it or to know who commited it or when we want to relase
+2.Lightweight tagging
+git tag ---> is used to list tags till now
+git tag -a v1.0 -m "lst release"  ---> annoted taging
+git show v1.0---> show details of this version
+git tag v1.1 -m "2nd version"
+git push origin v1.0 ---> we have to push tags seperately
+git log --pretty=onneline ---> gives commit id's and msg's in one line
+git switch name or git checkout name ===>are used to switch b/w branches
+git switch -c name or git checkout -b name(without "")---> if branch is not created already then we should use this
+git branch --> is used know d/f branches
+git branch --all --> gives all branches alongwith remote branches
+git switch -   ---> goes to previous branch
+git branch -d nameofbranch  ---> deletes branch(move to d/f branch before deleting otherwise branch will not be deleted)
+git merge branchname(not present branch name other branch name)
+git pull origin branch_name
+git push origin branch_name
+
+
+# mkdir file name ---> to create directory
+# cd ---> to change directory
+# pwd ---> path of present working directory
+
+#press q to come to to end of terminal
+
+
+
+d/f
+git init -b main
+Initialized empty Git repository in C:/appu/git_vs/.git/
+-a is adding directory in file itself
+
+
+
+
+file prefix:
+u-->untracked
+m-->modified
+a--->added
