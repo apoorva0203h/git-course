@@ -1,0 +1,60 @@
+git
+
+git add . ->helps to commit all files in working directory
+git rm --cached filename -->removes file from git
+
+ls -a --> list hidden file
+
+git branch -m old-branch-name new-branch-name
+This renames old-branch-name to new-branch-name.
+
+If you’re currently on the branch you want to rename, you can simply use:
+
+git branch -m new-branch-name
+This renames the current branch.
+
+-m: Renames the branch only if the new name is not already in use.
+
+-M: Forcibly renames the branch, even if a branch with the new name already exists (it will overwrite the existing branch).
+
+https every time login, SSH one time login
+
+CREATE SSH and connect to remote repo
+
+ssh-keygen -o 
+loc->enter
+passphrase->enter
+go to .ssh folder  copy key inside .pub folder
+go to git->settings->ssh and GPG keys->add ssh key and save
+
+git remote add origin git_link
+
+git push -u origin main(-u: upstream)
+origin is like git url
+
+git remote -v will give origin details
+
+tagging->version number types->annotated tagging[contains more info who commited it] and light weight tagging
+
+git tag-->will list all the tags given until now
+
+annotated tagging-> git tag -a v1.0 -m "message
+git show v1.0-> will give detailed info for this tag
+
+we need to push tags as well like ->git push origin v1.0
+
+git log --pretty=oneline-->gives checksum and commit msg in on e line
+
+git switch barchname and git check out branch both are same->used to switch to diff branches
+
+if you want to switch to new branch which is not created yet use -->git switch -c branchname or git checkout -b branch name
+
+git branch will list all the branches in repo
+
+git switch -  -> will switch previous branch we were in
+
+git branch -d branchname
+
+i am in main branch i want updated code of feature branch in main now-> git merge feature(before merging its better to pull latest code from masin branch -->git pull origin main)
+
+then push code to git agin -->git push origin main
